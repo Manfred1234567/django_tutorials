@@ -1,0 +1,27 @@
+###
+GET http://127.0.0.1:8000/api/tasks
+
+###
+POST http://127.0.0.1:8000/api/tasks/create/
+Content-Type: application/json
+
+{
+    "title" : "Win PSG",
+    "completed" : true
+}
+
+###
+
+PUT http://127.0.0.1:8000/api/tasks/update/1/
+Content-Type: application/json
+
+{
+    "title" : "Go To The Gym",
+    "completed" : true
+}
+
+###
+
+DELETE http://127.0.0.1:8000/api/tasks/delete/3/
+Content-Type: application/json
+
